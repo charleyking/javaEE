@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=gbk"
     pageEncoding="gbk"%>
-<%@ page import="java.sql.*" %>
+<%@ page import="java.sql.*, java.util.Date" %>
 
 <%
-
+Date date = new Date();
 request.setCharacterEncoding("gbk");
 String action = request.getParameter("action");
 if(action != null && action.equals("post")) {
@@ -51,6 +51,10 @@ if(action != null && action.equals("post")) {
 <title>Insert title here</title>
 </head>
 <body>
+<%
+out.println("hahaha");
+%>
+Hello, the time is now <%= date %>
 <form action="Post.jsp" method="post">
 	<input type="hidden" name="action" value="post">
 	<table border="1">
