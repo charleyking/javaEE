@@ -16,12 +16,12 @@
 }
 #topDiv{
 	background-image:url(images/bg_top.jpg);
-	width:800px;
+	width:100%;
 	height:176px;
 }
 #navigationDiv{
 	background-image:url(images/navigation_bg.jpg);
-	width:790px;
+	width:100%;
 	height:26px;
 	padding:5px 5px 0px 5px;
 	margin:0px;
@@ -42,6 +42,7 @@
 	height:156px;
 	z-index:10;
 	background-color:#546B51;
+	display:none;
 }
 #loginTitle{
 	padding:15px;
